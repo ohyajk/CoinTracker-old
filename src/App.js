@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Details from './components/Details';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import { fetchData } from './redux/coins/CoinSlice';
+import Details from './Components/Details';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import { fetchData } from './Redux/Coins/CoinSlice';
 
 function App() {
   const dispatch = useDispatch();

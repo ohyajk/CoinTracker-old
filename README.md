@@ -42,7 +42,7 @@ REQUIRED SECTIONS:
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 World AQI 🪄🔮🧝 <a name="about-project"></a>
+# 📖 CoinTracker 🪄🔮🧝 <a name="about-project"></a>
 
 > It is a React app which shows aqi levels of world.
 
