@@ -14,8 +14,8 @@ const Home = () => {
     <div className="">
       <div className="w-[100%] flex justify-center items-center">
         <form className="text-white flex items-center justify-center w-[90%] md:w-[60%] m-2">
-          <input onKeyUp={(e) => { setQuery(e.target.value.toLowerCase()); }} className="bg-[#0d0b13] px-4 py-2 outline-none w-[80%] border border-white/50 rounded-l-full focus:border-violet-600/50 focus:shadow-sm shadow-violet-400" type="text" placeholder="Search Coin name" />
-          <input className="py-2 px-4 bg-[#1a1729] border border-white/50 hover:bg-violet-400/75 sm:w-[20%] cursor-pointer rounded-r-full" type="submit" value="Search" />
+          <input onKeyUp={(e) => { setQuery(e.target.value.toLowerCase()); }} className="bg-[#0d0b13] px-4 py-2 outline-none w-[80%] border border-white/50 rounded-l-full focus:border-violet-600/50 focus:shadow-sm shadow-violet-400" type="text" placeholder="Search Coin name" required />
+          <input onClick={(e) => { e.preventDefault(); setQuery(query); }} className="py-2 px-4 bg-[#1a1729] border border-white/50 hover:bg-violet-400/75 sm:w-[20%] cursor-pointer rounded-r-full" type="button" value="Search" />
         </form>
       </div>
       <div>
