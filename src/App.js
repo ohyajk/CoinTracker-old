@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Details from './components/Details';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import { fetchData } from './redux/coins/CoinSlice.js';
+import { fetchData } from './redux/coins/CoinSlice';
 
 function App() {
   const dispatch = useDispatch();
