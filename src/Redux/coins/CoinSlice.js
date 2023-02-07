@@ -10,7 +10,7 @@ const coinSlice = createSlice({
   name: 'coinSlice',
   initialState: {
     data: [],
-    selectedCoin:[],
+    selectedCoin: [],
     loading: false,
     error: null,
   },
