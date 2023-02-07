@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { addCoin } from '../redux/coins/CoinSlice';
+import { addCoin } from '../Redux/Coins/CoinSlice';
 
 const Home = () => {
   const [query, setQuery] = useState('');
