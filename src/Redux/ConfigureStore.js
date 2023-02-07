@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import homeRed from './home/homeRed';
+import logger from 'redux-logger';
+import CoinSlice from './coins/CoinSlice';
 
 const store = configureStore({
-  counter: homeRed,
+  reducer: {
+    coins: CoinSlice,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 export default store;
